@@ -39,11 +39,6 @@ class RegisterForm extends React.Component {
       })
       .catch((err) => {
         console.log(err)
-        // this.message = err.response.data.message
-        // this.error = true
-        // this.$nextTick(() => {
-        //   this.$refs.error.$el.scrollIntoView()
-        // })
       })
   }
 

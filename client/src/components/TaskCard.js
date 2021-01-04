@@ -2,12 +2,9 @@ import React from 'react';
 import axios from '../config/axiosinstance.js';
 import Swal from 'sweetalert2';
 import formatDueDate from '../helper/formatDueDate';
-// import EditTaskForm from '../components/EditTaskForm';
-
 
 function TaskCard(props) {
   const TaskId = props.task.id;
-  const [showEditForm, setShowEditForm] = React.useState('false');
 
   function editStatus() {
     let payload = {}
@@ -72,11 +69,6 @@ function TaskCard(props) {
     })
     .catch((err) => {
       console.log(err)
-      this.message = err.response.data.message
-      this.error = true
-      // this.$nextTick(()=> {
-      //    this.$refs.error.$el.scrollIntoView();
-      // });
     })
   }
 
@@ -95,8 +87,6 @@ function TaskCard(props) {
           </div>
         </div>
       </div>
-      {/* <EditTaskForm task={props.task} status={props.status} showEditForm={showEditForm} setShowEditForm={setShowEditForm} fetchUncompleted_ref={props.fetchUncompleted_ref} fetchCompleted_ref={props.fetchCompleted_ref} fetchExpired_ref={props.fetchExpired_ref}/> */}
-      {/* <EditTaskForm /> */}
     </>
   );
 }

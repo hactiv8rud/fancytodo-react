@@ -1,5 +1,4 @@
 import React from 'react';
-// import axios from '../config/axiosinstance.js';
 import CurrentWeather from '../components/CurrentWeather';
 import AddTaskForm from '../components/AddTaskForm';
 import Quote from '../components/Quote';
@@ -35,26 +34,7 @@ function MainPage() {
   const [showEditForm, setShowEditForm] = React.useState(false);
   const [taskEdit, setTaskEdit] = React.useState({});
   const [statusName, setStatusName] = React.useState({});
-
-  // const [error, setError] = React.useState(false);
-  // const [confirmDelete, setConfirmDelete] = React.useState('false');
-  // const [hourlyForecast, setHourlyForecast] = React.useState('false');
-  // const [dailyForecast, setDailyForecast] = React.useState('false');
-
-  // const showEditTask = () => setEditTask(true);
-  // const hideEditTask = () => setEditTask(false);
-  // const showConfirmDelete = () => setConfirmDelete(true);
-  // const hideConfirmDelete = () => setConfirmDelete(false);
-  // const showHourlyForecast = () => setHourlyForecast(true);
-  // const hideHourlyForecast = () => setHourlyForecast(false);
-  // const showDailyForecast = () => setDailyForecast(true);
-  // const hideDailyForecast = () => setDailyForecast(false);
-
-  // const editTaskModal = ();
-  // const confirmDeleteModal = ();
-  // const hourlyForecastModal = ();
-  // const dailyForecastModal = ();
-
+  
   return(
     <>
       <div id="main-page">

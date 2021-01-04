@@ -239,15 +239,14 @@ input[type=text], input[type=email], input[type=password], input[type=date]  {
    bottom: 0.2rem;
 }
 
-/* .edit-task-container {
-   display:flex;
-   justify-content: center;
-} */
+.edit-task-form-container {
+   padding: 4rem 0;
+}
 
 .edit-task-form-content {
    padding-top: 1rem;
-   min-width: 26rem;
-   min-height: 32rem;
+   max-width: 26rem;
+   min-height: 34rem;
    border-radius: 1rem;
    border: solid 0.2rem;
    background-color: #ffe6cc;

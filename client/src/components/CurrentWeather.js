@@ -31,20 +31,17 @@ function CurrentWeather() {
   
     function error() {
       console.log("Unable to retrieve your location")
-      // $("#location-status").text('Unable to retrieve your location');
     }
   
     if(!navigator.geolocation) {
         console.log("Geolocation is not supported by your browser")
-        // $("#location-status").text("Geolocation is not supported by your browser");
     } else {
-        // $("#location-status").text("Locating ...");
         navigator.geolocation.getCurrentPosition(success, error);
     }
   }
 
   React.useEffect(() => {
-    // getCurrentWeather();
+    getCurrentWeather();
     setFullName(localStorage.getItem('fullName'));
   }, [])
 
@@ -67,15 +64,6 @@ function CurrentWeather() {
                   <p id="current-weather-temp">Temperature: {data.temperature}</p>
                   <p id="current-weather-wind">Wind Speed: {data.wind}</p>
               </div>
-            </div>
-            <div className="">
-              {/* <button type="button" data-toggle="modal" data-target="#hourly-forecast-modal"
-                className="btn mt-1" id="get-hourly-forecast"
-                style={{backgroundColor: "#b3b3b3", fontWeight: 500, width: "100%"}}>See 48-Hour
-                Forecast</button>
-              <button type="button" data-toggle="modal" data-target="#daily-forecast-modal" className="btn mt-1" id="get-daily-forecast"
-                style={{backgroundColor: "#b3b3b3", fontWeight: 500, width: "100%"}}>See 7-Day
-                  Forecast</button> */}
             </div>
           </div>
         </div>
